@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@deeper-ai/core-ai": ["packages/core-ai/index.ts"],
+      "@deeper-ai/code-review": ["packages/code-review/index.ts"],
+      "@deeper-ai/mcp-hub": ["packages/mcp-hub/index.ts"],
+      "@deeper-ai/team-portal": ["packages/team-portal/index.ts"]
+    }
+  },
+  "include": ["src", "packages", "__tests__"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
